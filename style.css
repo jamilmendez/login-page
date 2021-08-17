@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Hammersmith One', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-image: linear-gradient(to right, #333399, #ff00cc);
+}
+
+.login {
+    width: 350px;
+    height: 450px;
+    background: rgb(235, 235, 235);
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #292929;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: all .5s;
+}
+
+.login:hover {
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.300);
+}
+
+.login__title {
+    margin-bottom: 30px;
+}
+
+.login__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login__form input {
+    width: 250px;
+    height: 35px;
+    margin: 8px;
+    background: rgb(218, 218, 218);
+    border: none;
+    padding-left: 10px;
+    outline: none;
+    transition: all .5s;
+}
+
+.login__form input:focus {
+    background: rgb(194, 194, 194);
+}
+
+.button {
+    width: 250px;
+    height: 35px;
+    margin: 8px;
+    background: #db02b0cc;
+    color: #e2e2e2;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.button:hover {
+    background: #db02b08f;
+}
+
+.icons {
+    width: 250px;
+    height: 40px;
+    display: flex;
+    margin: 10px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icons__item {
+    width: 122px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 2px;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.icons__item i {
+    color: #3b5998;
+    margin: 8px;
+    transition: all .5s;
+}
+
+.icons__item:hover i {
+    color: #e2e2e2;
+}
+
+.icons__item .fa-google {
+    background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+.icons__item:hover:nth-child(1) {
+    background: #3b5998;
+    color: #e2e2e2;
+}
+
+.icons__item:hover:nth-child(2) {
+    background: #929292;
+    color: #e2e2e2;
+}
